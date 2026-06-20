@@ -6,6 +6,12 @@ The assistant helps users discover products, save shopping preferences, retrieve
 
 ---
 
+
+### Home Page
+![Home Page](Shopping_Agent/images/website1.png)
+
+![Home Page](Shopping_Agent/images/website2.png)
+
 ## Features
 
 ### 🔍 Natural Language Product Search
