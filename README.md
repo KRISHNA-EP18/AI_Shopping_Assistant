@@ -66,6 +66,7 @@ A dedicated validation layer filters off-topic requests and keeps the assistant 
 * Groq LLMs
 * Streamlit
 * SQLite
+* pillow
  
 
 
