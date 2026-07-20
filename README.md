@@ -132,7 +132,7 @@ streamlit run Shopping_Agent/app.py
 
 ---
 
-## Topics 
+## Topics
 
 * Building AI agents with LangChain
 * Tool calling and agent workflows
