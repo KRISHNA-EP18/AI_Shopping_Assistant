@@ -21,7 +21,7 @@ Search products using conversational queries:
 * I want organic honey under $20
 * Show me highly rated coffee
 * Recommend healthy snacks
-
+ 
 ### ⭐ Product Ratings & Reviews
 
 The assistant retrieves product ratings and review counts before making recommendations.
