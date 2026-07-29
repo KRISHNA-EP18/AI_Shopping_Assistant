@@ -4,7 +4,7 @@ An AI-powered shopping assistant built using LangChain, Groq LLMs, Streamlit, an
 
 The assistant helps users discover products, save shopping preferences, retrieve order history, place orders, and search products using uploaded images.
 
----
+--- 
 
 
 ### Home Page
