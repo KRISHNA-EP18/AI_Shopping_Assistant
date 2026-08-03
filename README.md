@@ -10,7 +10,7 @@ The assistant helps users discover products, save shopping preferences, retrieve
 ### Home Page
 ![Home Page](Shopping_Agent/images/website1.png)
 ### Product Search Result
-![Home Page](Shopping_Agent/images/website2.png)
+![Home Page](Shopping_Agent/images/website2.png) 
 
 ## Features 
 
