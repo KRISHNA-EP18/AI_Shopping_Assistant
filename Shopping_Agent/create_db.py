@@ -202,10 +202,13 @@ def create_database():
                 (32, 3.5, "Yosef",  "Slightly thin but good for cereal."),
                 (32, 3.5, "Zola",   "Decent soy milk, nothing special."),
             ]
-            cursor.executemany(
-                "INSERT INTO reviews (product_id, rating, reviewer_name, review_text) VALUES (?, ?, ?, ?)",
-                reviews,
-            )
+            review_count = cursor.execute("SELECT COUNT(*) FROM reviews").fetchone()[0]
+
+            if review_count == 0:
+                cursor.executemany(
+                    "INSERT INTO reviews (product_id, rating, reviewer_name, review_text) VALUES (?, ?, ?, ?)",
+                    reviews,
+                )
 
         print(f"Database created at: {DB_PATH}")
 
