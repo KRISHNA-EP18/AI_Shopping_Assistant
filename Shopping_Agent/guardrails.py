@@ -51,16 +51,49 @@ BLOCKED examples:
 
 
 def is_allowed(user_message: str) -> bool:
-    if "I uploaded a product image" in user_message:
+    message = user_message.lower().strip()
+
+    # Product/shopping requests that are clearly safe and on-topic.
+    shopping_keywords = [
+        "buy",
+        "want",
+        "need",
+        "find",
+        "search",
+        "show me",
+        "looking for",
+        "recommend",
+        "product",
+        "products",
+        "honey",
+        "coffee",
+        "tea",
+        "snack",
+        "snacks",
+        "almond",
+        "almonds",
+        "olive oil",
+        "organic",
+        "grocery",
+        "groceries",
+        "price",
+        "under $",
+        "order",
+        "checkout",
+    ]
+
+    if any(keyword in message for keyword in shopping_keywords):
         return True
+
+    if "i uploaded a product image" in message:
+        return True
+
+    # Use the LLM only for ambiguous messages.
     response = _llm.invoke([
         {"role": "system", "content": _SYSTEM_PROMPT},
         {"role": "user", "content": user_message},
     ])
 
-    answer = response.content.upper()
+    answer = response.content.strip().upper()
 
-    if "ALLOWED" in answer:
-        return True
-
-    return False
+    return answer == "ALLOWED"
