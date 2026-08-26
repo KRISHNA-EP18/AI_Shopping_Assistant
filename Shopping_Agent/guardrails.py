@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-_llm = ChatGroq(model="qwen/qwen3-32b", temperature=0)
+_llm = ChatGroq(model="openai/gpt-oss-20b", temperature=0)
 
 BLOCKED_RESPONSE = (
     "I'm your shopping assistant and can only help with product searches, "
