@@ -8,7 +8,7 @@ The assistant helps users discover products, save shopping preferences, retrieve
 
 ## 🚀 Live Demo
 
-👉 **[Try the AI Shopping Assistant](https://aishoppingassistant-zgrapaauypasveh46ndgcn.streamlit.app/)**
+👉 **[AI Shopping Assistant](https://aishoppingassistant-zgrapaauypasveh46ndgcn.streamlit.app/)**
 
 ---
 
